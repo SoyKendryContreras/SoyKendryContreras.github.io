@@ -1,0 +1,11 @@
+/* TEAM */
+	Designer:Kendry Contreras
+	Contact: kendryjesuscontreras [at] gmail.com
+	Facebook: @KendryJesusContreras
+	From:Ciudad de San Francisco, Zulia, Venezuela
+	
+/* SITE */
+	Last update:2019/03/06
+	Standars: HTML5, CSS3, JavaScrip
+	Doctype:HTML5
+	IDE: Visual Studio Code, Photoshop, GitHub Page.

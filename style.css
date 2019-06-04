@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Cargando Fuentes*/
+
+	@font-face{
+		font-family: "montserrat";
+		src:url(fonts/Montserrat-Regular.ttf);
+		font-display: fallback;
+		
+	}
+	@font-face{
+		font-family: "Montserrat-ExtraBold";
+		src:url(fonts/Montserrat-ExtraBold.ttf);
+		font-display: fallback;
+		
+	}
+
+/*CLASES SEGUNDARIAS*/
+	html {
+	  -webkit-text-size-adjust: 100%; /* 2 */
+	}
+	body{
+		position: relative;
+		font-family: "montserrat";
+		width: 100%;
+		text-align: center;
+		letter-spacing: .2px;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+	letter-spacing: 2px;
+	font-family: "Montserrat-ExtraBold";
+	padding: 0 0 1em 0;
+	}
+	figure {
+		outline: none;
+	}
+	img{
+	    width: 100%;
+	    height: auto;
+	    display: block;
+	    border-style: none;
+	}
+	p{
+		line-height: 140%;
+		padding: .2em 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	.botonfijo{
+		position: fixed;
+		background: #fff;
+		box-shadow: .1em .3em .5em #ccc;
+		display: inline-block;
+		padding: 1%;
+		border-radius: 50px;
+		bottom: 2%;
+		right: 2%;
+		z-index: 10;
+		font-weight: bolder;
+		}
+	.titulos{
+		margin: 0 auto;
+		padding-bottom: 60px;
+		font-size: 3em;
+		max-width: 600px;
+	}
+	/*estilo par Clases*/
+	.seccionesPage{
+		padding: 10% 0px;
+	}
+	.borderOrange {
+		border-bottom: 2px solid rgb(255, 100, 0);
+	}
+/* CABECERA */
+	.cabeceraFija {
+		position: sticky;
+		top: 0;
+		width: 100%;
+		background: rgb(255,255,255);
+		z-index: 100;
+		border-bottom: 2px solid #ccc;
+	}
+	.cabecera {
+		display: inline-block;
+		width: 30%;
+		padding: .3em 0;
+	}
+	.titulo{
+		font-family: "montserrat";
+		font-variant: small-caps;
+		font-size: 1em;
+		letter-spacing: 3px;
+		display: inline-block;
+		padding: 0;
+		
+	}
+	.titulo a{
+		text-decoration: none;
+		display: inline-block;
+		color: #000;
+		padding: .5em;
+		border: 2px solid rgb(255, 100, 0);
+	}
+	.menu {
+		display: inline-block;
+		width: 60%;
+	}
+	.menu ul{
+		list-style: none;
+	}
+	.menu ul li {
+		display: inline-block;
+		padding: 0 .5em;
+	}
+
+	.menu ul li a{
+		display: inline-block;
+		color: #444;
+		padding: .5em 0;
+	}
+	.menu ul li a:hover {
+		color: rgb(255, 100, 0);
+	}
+	.contentBtn {
+		display: none;
+	}
+	.contentBtn .btnMenu {
+		font-size: 1.5em;
+	}
+/*BIO*/
+	.bio {
+		padding: 6% 0 10% 0;
+	}
+	.imagenBio{
+		width: 16%;
+		height: auto;
+		overflow: hidden;
+		border-radius: 50%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+	.imagenBio img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.description{
+		margin: 0 auto;
+		text-align: justify;
+		max-width: 600px;
+	}
+	.blockquote {
+		border-left: 4px solid rgb(100,100,100);
+		padding: 2em;
+		font-style: oblique;
+		background: rgb(240,240,240);
+		margin: 2em auto;
+	}
+	.big {
+		font-size: 4em;
+		padding: .3em 0;
+		display: block;
+	}
+	.caracteristicas {
+		padding: 3em 0 0 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+		grid-gap: 1em;
+	}
+/*EXPERIENCIA*/
+	.xp{
+		background: #f0f0f0;
+	}
+	.indicadores{
+		width: 68%;
+		padding-bottom: 5%;
+		margin: 0 auto;
+		font-weight: bold;
+
+	}
+	.indicadores .texto{
+		text-align: center;
+	}
+	.indicadores div{
+		list-style: none;
+	}
+	.indicadores div .lista{
+		text-align: left;
+		display: block;
+		background: #bdc3c7;
+		margin: 2% 0px 4% 0px;
+		padding: 0;
+	}
+	.porcentaje {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background: rgb(255, 100, 0);
+		padding: 6px;
+	}
+	.grafico{width: 85%;}
+	.web{width: 90%;}
+	.digital{width: 80%;}
+/* ORGANIZACIONES*/
+
+	.org{	
+		width: 65%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: .5em;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		list-style: none;
+
+	}
+	.org li img{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	.org li img:hover{
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+
+	}
+/*PROYECTOS O TRABAJOS*/
+
+	.portafolio {
+		margin: 0% auto;
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	.projects {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1.5em;
+		width: 86%;
+		margin: 0 auto;
+		text-align: left;
+		padding: 1em;
+		margin-bottom: 2em;
+	}
+	.reverse figure {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+	}
+/* PIE DE PAGINA*/
+	.piepagina{
+		background: #000;
+		color: #fff;
+	}
+	.piepagina a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.lista-iconos{
+		list-style: none;
+	}
+	.lista-iconos li{
+		display: inline-block;
+	}
+	.icono-pie{
+		color: #ffffff;
+		text-decoration: none;
+		display: block;
+		font-size: 1.2em;
+		padding: .4em;
+	}
+	.icon-phone{
+		background: #fff;
+		color: #000;
+		padding: 4px;
+		border-radius: 50%;
+	}
+
+	.validacion {
+		margin: 0 auto;
+
+	}
+	.validacion a{
+		display: inline-block;
+		margin: 2%;
+	}
+	.calidad {
+		padding: 1em 0;
+	}
+
+@media (max-width: 760px) {
+	.main {
+		width: 92%;
+		margin: 0 auto;
+	}
+	.cabeceraFija {
+		display: grid;
+		grid-template-columns: 70% 1fr;
+		align-items: center;
+		text-align: center;
+	}
+	.cabecera {
+		width: auto;
+	}
+	.contentBtn {
+		display: inline-block;
+	}
+		.btnMenu {
+			cursor: pointer;
+		}
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: auto;
+		background: #444;
+		height: 100%;
+		padding: 1em 3em;
+		transition: .5s ease;
+	}
+	.hidden {
+		left: -215px;
+	}
+		.menu ul li {
+			display: block;
+		}
+			.menu ul li a {
+				color: #fff;
+			}
+
+	/* P R O Y E C T O S */
+		.projects {
+			display: grid;
+			grid-template-columns: 1fr;
+			width: 100%;
+		}
+		.reverse figure {
+			grid-column: 1 / 2;
+		}
+
+}
+@media (max-width: 600px) {
+	.caracteristicas {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
